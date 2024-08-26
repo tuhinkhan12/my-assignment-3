@@ -3,17 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>assignment 3</title>
+    <!-- daisyui + tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+       .manrope-font{font-family: "Manrope"}
+    </style>
+    <!-- button cdn -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-clr': '#ABEF5F',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    <header>
-
+<body class="manrope-font">
+    <header class="max-w-xl mx-auto">
+      <!-- header part section -->
+       <div class="">
+        <img src="./assets/banner.png" alt="">
+        <div class="">
+            <h2 class="text-4xl font-bold">A barn house of this design has a <span class="ml-28"> striking appearance</span></h2>
+            <p class="pt-6 text-xs ">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+            </p>
+            <button class="bg-btn-clr mt-4 text-black text-xl font-bold p-2 rounded-2xl ml-52">View Details <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+        </div>
+       </div>
     </header>
-    <main>
+    <main class="bg-slate-100 mt-20">
+        <!-- about section start -->
+         <!-- small img content -->
+          <div>
+            <img class="pl-8" src="./assets/Vector.png" alt="">
+          </div>
+         <div class="mt-4">
+            <!-- Button content -->
+            <button class="ml-16 bg-white p-2 rounded-xl font-bold">About Us <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+        </div>
+        <!-- text content -->
+        <div class="mx-16">
+            <div class="mt-4">
+                <h2 class="font-bold text-2xl">We design thoughtful,<br> liveable spaces</h2>
+                <p class="mt-4 text-gray-600">The barn house captivates with its blend of rustic charm and <br> 
+                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    <div class="flex mt-6 bg-white pl-8 rounded-xl">
+                        <img src="./assets/commercial.png" alt="">
 
+                        <div>
+                            <h4 class="pl-8 font-extrabold text-gray-700">Commercial</h4>
+                            <p class="pl-8">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                        </div>
+
+                    </div>
+                    <div class="flex mt-6 bg-white pl-8 rounded-xl">
+                        <img src="./assets/residential.png" alt="">
+
+                        <div>
+                            <h4 class="pl-8 font-extrabold text-gray-700">Residetial</h4>
+                            <p class="pl-8">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                        </div>
+
+                    </div>
+              </div>
+        </div>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
